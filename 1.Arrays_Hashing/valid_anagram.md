@@ -78,12 +78,10 @@ If mixed case were allowed, convert both strings to lowercase first:
 - For frequency counting, always think about first occurrence
 
 ## Brute-force code:
-
-class Solution:
-def isAnagram(self, s: str, t: str) -> bool:
-if len(s) != len(t):
-return False
-
+        class Solution:
+        def isAnagram(self, s: str, t: str) -> bool:
+        if len(s) != len(t):
+                return False
         s = sorted(s)
         t = sorted(t)
 
@@ -93,12 +91,10 @@ return False
         return True
 
 ## Optimized code - Hash Map
-
-class Solution:
-def isAnagram(self, s: str, t: str) -> bool:
-if len(s) != len(t):
-return False
-
+        class Solution:
+        def isAnagram(self, s: str, t: str) -> bool:
+        if len(s) != len(t):
+                return False
         countS, countT = {}, {}
 
         for i in range(len(s)):
